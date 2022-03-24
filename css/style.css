@@ -1,7 +1,7 @@
 body {
     font-family: "Roboto Mono", monospace;
     text-align: center;
-    background-image: url("https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-04-aluraflix-e-filmes.png");
+    background-image: url("https://www.designerd.com.br/wp-content/uploads/2018/01/cenas-memoraveis-de-series-de-tv-em-pixel-art-2.png");
     background-color: #000000;
     background-size: cover;
     background-position: center top;
@@ -14,17 +14,20 @@ body {
 }
 
 .page-title {
-    color: #ffffff;
+    color: red;
     margin: 0 0 5px;
+    text-transform: uppercase;
 }
 
 .page-subtitle {
     color: #ffffff;
+    background-color: #000000;
     margin-top: 5px;
 }
 
 .page-logo {
     width: 200px;
+    margin-top: 20px;
 }
 
 .alura-logo {
@@ -50,7 +53,6 @@ body {
 }
 
 .form-wrapper input {
-    display: block;
     margin: 0 auto;
     padding: 10px 15px;
     text-align: center;
@@ -76,4 +78,19 @@ body {
 .textoMensagem {
     color: black;
     margin: 0 0 5px;
+}
+
+.checked {
+    color: orange;
+}
+
+.filmes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.classificacao {
+    display: flex;
+    flex-direction: row;
 }

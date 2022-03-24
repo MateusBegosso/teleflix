@@ -5,32 +5,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>AluraFlix</title>
+    <title>Tele Flix</title>
 </head>
 
 <body>
     <div class="container">
         <h1 class="page-title">
-            Aluraflix
+            Tele Flix
         </h1>
-        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo"
-            alt="">
-        <p class="page-subtitle">
-            Qual seu filme favorito?
-        </p>
-        <div class="form-wrapper">
+        <img src="https://www.fortatacadista.com.br/wp-content/uploads/2017/09/rolo-filme.png" class="page-logo" alt="">
+        <h2 class="page-subtitle">
+            Monte a lista dos seus filmes preferidos!
+        </h2>
+        <div class="form-wrapper page-title">
             <input type="text" id="nomeFilme" name="nomeFilme" placeholder="Insira o nome do filme">
-            <input type="text" id="filme" name="filme" placeholder="Insira o link da imagem">
+            <input type="text" id="imagemFilme" name="imagemFilme" placeholder="Insira o link da imagem">
+            <input type="text" id="trailerFilme" name="trailerFilme" placeholder="Insira o link do trailer">
+            <br>
+            <input type="text" id="comentarioFilme" name="comentarioFilme" placeholder="Digite um comentário sobre o filme">
+
+            <p>Classificação</p>
+            <input type="radio" name="classificacao" value=1> 1
+            <input type="radio" name="classificacao" value=2> 2
+            <input type="radio" name="classificacao" value=3> 3
+            <input type="radio" name="classificacao" value=4> 4
+            <input type="radio" name="classificacao" value=5> 5
+            <br>
             <button onClick="adicionarFilme()">Adicionar Filme</button>
         </div>
     </div>
-    <h2 class="textoMensagem" id="mensagem"></h2><br>
+    <h3 class="textoMensagem" id="mensagem"></h3><br>
     <div id="listaFilmes"></div>
     <a href="https://alura.com.br/" target="_blank">
         <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
     </a>
-    
+
     <script src="./js/main.js"></script>
 </body>
 
